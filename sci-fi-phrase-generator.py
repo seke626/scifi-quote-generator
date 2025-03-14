@@ -3,7 +3,7 @@ import random
 def read_words_from_file(file_name):
     try:
         with open(file_name, 'r') as file:
-            words = file.read().splitlines()  # Read lines and split them into a list
+            words = file.read().splitlines()
         return words
     except FileNotFoundError:
         print(f"Error: The file '{file_name}' was not found.")
